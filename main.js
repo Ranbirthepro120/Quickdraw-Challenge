@@ -75,6 +75,6 @@ function gotResult(error, results)
     }
     console.log(results);
     drawn_sketch =  results[0].label;
-    document.getElementById("yoursketch") = "Your Sketch : " + drawn_sketch;
-    document.getElementById("confidence") = "Confidence : " + Math.round(results[0].confidence * 100) + "%";
+    document.getElementById("yoursketch").innerHTML = "Your Sketch : " + drawn_sketch;
+    document.getElementById("confidence").innerHTML = "Confidence : " + Math.round(results[0].confidence * 100) + "%";
 }
